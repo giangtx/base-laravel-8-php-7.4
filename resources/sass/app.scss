@@ -1,0 +1,18 @@
+//@font-face {
+//  font-family: 'HGSoeiKakugothicUB';
+//  src: url('/fonts/HGPSoeiKakugothicUB-02.ttf') format("truetype");
+//}
+
+body {
+  position: relative;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+
+  padding-right: 0 !important;
+}
