@@ -12,8 +12,7 @@
     <title>{{ config('app.name', 'Example app') }}</title>
 
     <!-- Styles -->
-    @viteReactRefresh
-    @vite('resources/sass/style.scss')
+    <link href="{{ mix('css/build/style.css') }}" type="text/css" rel="stylesheet" />
   </head>
   <body class="">
     @include('includes.header')
@@ -22,6 +21,6 @@
 
     @include('includes.footer')
     @yield('js')
-    @vite('resources/js/custom.js')
+    <script src="{{ mix('js/build/script.js') }}" defer></script>
   </body>
 </html>

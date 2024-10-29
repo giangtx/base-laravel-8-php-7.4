@@ -9,11 +9,14 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    @viteReactRefresh
-    @vite('resources/sass/app.scss')
+
+    <!-- Styles -->
+    <link href="{{ mix('css/build/app.css') }}" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <div id="app"></div>
-    @vite('resources/js/app.js')
+    <!-- Scripts -->
+
+    <script src="{{ mix('js/build/app.js') }}" defer></script>
   </body>
 </html>
