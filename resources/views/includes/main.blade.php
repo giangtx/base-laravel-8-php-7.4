@@ -11,6 +11,8 @@
 
     <title>{{ config('app.name', 'Example app') }}</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
     <!-- Styles -->
     <link href="{{ mix('css/build/style.css') }}" type="text/css" rel="stylesheet" />
   </head>
@@ -21,6 +23,8 @@
 
     @include('includes.footer')
     @yield('js')
+    <!-- Bootstrap jQuery -->
+    <script src="plugins/bootstrap/bootstrap.min.js" defer></script>
     <script src="{{ mix('js/build/script.js') }}" defer></script>
   </body>
 </html>
